@@ -1,0 +1,14 @@
+[Unit]
+Description=nextbus
+After=network-online.target
+
+[Service]
+ExecStart=/home/jimmy/src/nextbus/nextbus.py
+Type=simple
+StandardOutput=tty
+TTYPath=/dev/tty1
+User=nobody
+Group=nobody
+
+[Install]
+WantedBy=multi-user.target
