@@ -9,6 +9,8 @@ StandardOutput=tty
 TTYPath=/dev/tty1
 User=nobody
 Group=nobody
+Restart=on-failure
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
